@@ -2,13 +2,16 @@
 
 int main()
 {
-    //setup width and length
-    unsigned short width = 26, length;
-    length = 40;
+    // create a type definition
+    typedef unsigned short USHORT;
 
-    //create an unsigned short initialized with the
+    //setup width and length
+    USHORT width = 26;
+    USHORT length = 40;
+
+    //create an unsigned short initialized with the 
     //result of multiplying width by length
-    unsigned short area = width * length;
+    USHORT area = width * length;
 
     std::cout << "Width: " << width << "\n";
     std::cout << "Length: " << length << "\n";
